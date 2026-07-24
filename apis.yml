@@ -1,7 +1,25 @@
 aid: bereal
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bereal.png
 name: BeReal
-description: BeReal is a company surfaced as a portfolio company of a16z, accel and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: BeReal is a French social media application that encourages authentic, unfiltered daily
+  sharing through a two-minute random notification window in which users capture a moment using both
+  the front and rear cameras simultaneously. Positioned as an alternative to curated, algorithmic social
+  media, it emphasizes genuine connection over performance and explicitly excludes AI-generated content
+  from the platform. Founded in France and acquired by mobile publisher Voodoo, BeReal operates a consumer
+  mobile product with a help center and an advertising business, but publishes no public developer API,
+  developer portal, or SDKs. This API Evangelist profile was surfaced via a16z and Accel portfolio data
+  and enriched with the provider's real public web properties and domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/bereal/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Social
+- Social Media
+- Photo Sharing
+- Consumer
+- Mobile
+- Advertising
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +46,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bereal-domain-security.yml
 - type: Website
-  url: https://bere.al/en
+  url: https://bereal.com/
+- type: Support
+  name: Help Center
+  url: https://help.bereal.com/hc/en-us
+- type: Blog
+  name: News
+  url: https://bereal.com/news
+- type: PrivacyPolicy
+  url: https://bereal.com/privacy
+- type: TermsOfService
+  url: https://bereal.com/terms
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
